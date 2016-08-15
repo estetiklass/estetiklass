@@ -1,0 +1,65 @@
+
+<% def categories = page.products + page.echeader.categories %>
+
+<nav id="navigation" role="navigation" class="navigation navigation-primary sub-navigation-no-shop">
+    <div class="container">
+        <div class="row">
+            <div class="grid-module-4">
+                <a href="/" class="logo">
+                    <img src="${r '/images/logo.png'}" alt="esteticlass"/>
+                </a>
+            </div>
+            <div class="grid-module-8">
+                <ul class="nav-primary">
+                    <% categories.each { cat -> %>
+                    <li>
+                        <a href="#${cat.name}" data-eq="nav-primary-1">${cat.label}</a>
+                    </li>
+                    <% } %>
+                </ul>
+            </div>
+            <div class="grid-module-4 relative">
+                <ul class="nav-secundary">
+                    <li>
+                        <!--<a href="#tools" data-icon="" class="link-button js-link-button-next">-->
+                        <!--<span class="ocultar">Tools</span>-->
+                        <!--</a>-->
+                        <!--<section id="tools">-->
+                        <!--<div class="fl 1/2">-->
+                        <!--<ul class="list-block list-block&#45;&#45;ico center-center">-->
+                        <!--<li><a data-icon="" href="/en/stores">Store locator</a></li>-->
+                        <!--<li><a data-icon="" href="/en/contact">contact us</a></li>-->
+                        <!--<li><a data-icon=""-->
+                        <!--href="https://www.naturabisse.com/ps/INT/index.php?controller=newsletter">Newsletter</a>-->
+                        <!--</li>-->
+                        <!--</ul>-->
+                        <!--</div>-->
+                        <!---->
+                        <!--</section>-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<nav class="sub-navigation-primary relative" data-navigation="expand-navigation">
+    <% categories.sort { it?.order }.each { cat -> %>
+    <section id="${cat.name}" class="open-section">
+        <div class="container">
+            <% if (cat.items) { %>
+            <ul class="list-justify bxslider--products">
+                <% cat.items.sort { it.order }.each { item -> %>
+                    <li>
+                        <a href="${item.url}">
+                            <img src="${r item.image}" alt="${item.label}"/>
+                            <span>${item.label}</span>
+                        </a>
+                    </li>
+                <% } %>
+            </ul>
+            <% } %>
+        </div>
+    </section>
+    <% } %>
+</nav>

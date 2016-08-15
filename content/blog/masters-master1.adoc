@@ -1,0 +1,12 @@
+---
+layout: master
+title: "Атравматичная чистка PLEYANA"
+name: "Атравматичная чистка PLEYANA"
+spec: "Врач-дерматовенеролог"
+photo: "/images/masters/master1.jpg"
+
+author: ЭстетиКласс
+published: true
+
+desc: "Кандидат медицинских наук, врач-дерматовенеролог, косметолог, ведущий специалист по инъекционным методикам клиники «ТриАктив», медицинский эксперт журнала The Hollywood Reporter. Russian Edition. Научный руководитель компании INNOVATION (г. Москва)."
+---

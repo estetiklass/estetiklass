@@ -1,0 +1,12 @@
+---
+layout: master
+title: "Атравматичная чистка PLEYANA"
+name: "Атравматичная чистка PLEYANA"
+spec: "Врач-дерматовенеролог"
+photo: "/images/masters/master1.jpg"
+
+author: ЭстетиКласс
+published: true
+
+desc: "Врач-дерматовенеролог, косметолог, трихолог. Сертифицированный национальный тренер компании INNOVATION."
+---

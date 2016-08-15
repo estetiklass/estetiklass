@@ -1,0 +1,39 @@
+---
+layout: classes
+title: "Мастер-классы"
+navigate: true
+---
+
+<section class="container container-classes">
+
+    <h1>Будущие мастер-классы</h1>
+
+    <div class="decorator-solid decorator-box">
+        <ul class="list-center list-center--link list-center--3--item">
+            <% page.classes.each { cl -> %>
+            <li>
+                <a href="${ cl.url }">
+                    <div>
+                        <img src="${ r cl.preview }" />
+                    </div>
+                    <div>
+                        <h3 class="header-s">
+                            ${cl.title}
+                        </h3>
+                        <p>
+                            <% def eventDate = parseDate(date: cl.eventDate) %>
+                            <time datetime="${xmlDateTime(date: eventDate)}">
+                                <span class="day">${eventDate.format('dd')}</span>,
+                                <span class="month">${eventDate.format('MMMM')}</span>
+                                <span class="year">${eventDate.format('yyyy')}</span>
+                            </time>
+                        </p>
+                        <p><span class="link-more">Детали</span> </p>
+                    </div>
+                </a>
+            </li>
+            <% } %>
+        </ul>
+    </div>
+
+</section>

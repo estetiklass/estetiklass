@@ -1,0 +1,46 @@
+<% loadConfigBundle '/_site/' %>
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>
+<html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]>
+<html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!-->
+<html class="no-js" lang="en"><!--<![endif]-->
+
+${include 'head.html'}
+
+<body ${page.sidebar !=false ?
+'' : "class='no-sidebar'"}
+${page.sidebar == 'collapse' || site.sidebar == 'collapse' ? "class='collapse-sidebar sidebar-footer'" : ''} >
+<div class="page page--intro ${page.layout in ['products', 'masters'] ? 'page--inhibit' : 'page--home'}">
+
+    <header id="header" role="banner">
+        ${ include 'ec/header.html' }
+    </header>
+    <header id="header-mobile" style="display: none"></header>
+
+    <div class="page--open-menu">
+        <section class="container" style="display: none"></section>
+
+        ${ content }
+
+        <footer id="footer" role="contentinfo">
+            <div class="decorator-plane">
+                ${include 'footer.html'}
+            </div>
+        </footer>
+    </div>
+
+    <!--<header role="banner">${ /* include 'header.html' */}</header>-->
+    <!--<nav role="navigation">${/* include 'navigation.html' */}</nav>-->
+    <!--<div id="main">-->
+    <!--<div id="content">-->
+    <!--${ /* content */}-->
+    <!--</div>-->
+    <!--</div>-->
+    ${include 'after_footer.html'}
+</div>
+</body>
+
+</html>

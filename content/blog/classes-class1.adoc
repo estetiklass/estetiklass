@@ -1,0 +1,17 @@
+---
+layout: class
+name: class1
+title: "Мастер-класс 1"
+theme: "Тема мастер класса"
+master: "Специалист"
+preview: "/images/learning/classes/default.jpg"
+photo: "/images/learning/classes/class1/master1.jpg"
+eventDate: "2016-08-18 13:00"
+
+author: ЭстетиКласс
+published: true
+
+desc: "Врач-дерматовенеролог, косметолог, трихолог. Сертифицированный национальный тренер компании INNOVATION."
+---
+
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."

@@ -1,0 +1,9 @@
+<!-- Place your javascript or css declarations here so that they will be placed after footer -->
+
+<% rs([
+        '/javascripts/libs/jquery.bxslider.min.js',
+        '/javascripts/application.js'
+    ]).each { script -> %>
+    <script src="${script}" type="text/javascript"></script>
+<% } %>
+

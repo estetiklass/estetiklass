@@ -1,0 +1,16 @@
+---
+layout: page
+title: "О нас"
+navigate: true
+---
+
+<% def info = aboutus() %>
+<% info %>
+<section class="container text-align-left">
+    <h1>${info.aboutus.title}</h1>
+   
+    <p>
+        ${info.aboutus.text}
+    </p>
+    
+</section>

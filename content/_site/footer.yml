@@ -1,0 +1,60 @@
+customfooter:
+  copyright: Copyright &copy; ЭстетиКласс 2016
+  sections:
+    - name: about
+      label: ЭстетиКласс
+      order: 1
+      items:
+        - order: 1
+          name: about_us
+          label: О нас
+          url: '/contacts/aboutus/'
+        - order: 2
+          name: publications
+          label: Публикации
+          url: '/publications/'
+        - order: 3
+          name: partners
+          label: Партнеры
+          url: '/contacts/partners/'
+        - order: 4
+          name: ourmasters
+          label: Наши специалисты
+          url: '#'
+        - order: 5
+          name: contacts
+          label: Контакты
+          url: '/contacts/'
+    - name: learning
+      label: Обучение
+      order: 3
+      items:
+        - order: 1
+          name: timetable
+          label: Расписание
+          url: '#timetable'
+        - order: 2
+          name: masters
+          label: Тренеры
+          url: '/contacts/masters/'
+        - order: 3
+          name: archive
+          label: Архив
+          url: '/learning/archive/'
+        - order: 4
+          name: classes
+          label: Мастер-классы
+          url: '/learning/classes/'
+
+    - name: info
+      label: Информация
+      order: 4
+      items:
+        - order: 1
+          name: newsletters
+          label: Акции
+          url: '#newsletters'
+        - order: 2
+          name: news
+          label: Новости
+          url: '#news'

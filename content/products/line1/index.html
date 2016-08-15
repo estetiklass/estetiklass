@@ -1,0 +1,50 @@
+---
+layout: products
+title: "Продукты"
+navigate: true
+---
+
+<section class="container container-products">
+    <h1>Продуктовая линия 1</h1>
+    <% page.products.line1.eachWithIndex { spec, idx -> %>
+    <section class="container">
+        <div class="row ${idx%2 ? 'row--adjust' : 'row-relative row-relative--reverse'}">
+            <% if (idx%2 == 0) { %>
+            <div class="grid-module-8">
+                <img src="${ r spec.photo }" height width alt="${spec.name}"
+                     class="decorator decorator--big decorator--nogrid"/>
+            </div>
+            <div class="grid-module-8">
+                <section class="intro-section">
+                    <header class="intro__header">
+                        <h1 class="header-xxl">${spec.name}</h1>
+
+                    </header>
+                    <p>${spec.desc}</p>
+                </section>
+            </div>
+            <% } else { %>
+            <div class="grid-module-8">
+                <section class="intro-section">
+                    <header class="intro__header">
+                        <h1 class="header-xxl">${spec.name}</h1>
+                        <p class="header-s">
+                            ${spec.spec}
+                        </p>
+                    </header>
+                    <p>${spec.desc}</p>
+                </section>
+            </div>
+            <div class="grid-module-8">
+                <img src="${ r spec.photo }" height width alt="${spec.name}"
+                     class="decorator decorator--big decorator--nogrid"/>
+            </div>
+            <% } %>
+        </div>
+
+    </section>
+    <% } %>
+</section>
+
+
+

@@ -1,0 +1,32 @@
+---
+layout: page
+title: "Архив"
+navigate: true
+---
+
+<section class="container container-classes">
+
+    <h1>Архив мастер-классы</h1>
+
+    <div class="decorator-solid decorator-box">
+        <ul class="list-center list-center--link list-center--3--item">
+            <% 3.times { %>
+            <li>
+                <a href="#">
+                    <div>
+                        <img src="${ r '/images/learning/classes/default.jpg' }" />
+                    </div>
+                    <div>
+                        <h3 class="header-s">
+                            Мастер-класс ${it}
+                        </h3>
+                        <p>1${it} июля</p>
+                        <p><span class="link-more">Детали</span> </p>
+                    </div>
+                </a>
+            </li>
+            <% } %>
+        </ul>
+    </div>
+
+</section>

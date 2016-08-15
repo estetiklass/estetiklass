@@ -1,0 +1,27 @@
+<div class="ec-footer container">
+
+    <section class="ec-footer-section bottom-footer">
+        <% def sections = page.products + page.customfooter.sections %>
+
+        <% sections.sort { it.order }.each { sec -> %>
+        <div>
+            <h3 class="header-xs">${sec.label}</h3>
+            <ul class="unstyled">
+                <% sec.items.sort { it.order }.each { item -> %>
+                <li>
+                    <a href="${item.url}">${ item.label }</a>
+                </li>
+                <% } %>
+
+        </div>
+        </ul>
+        <% } %>
+    </section>
+    <div class="ec-after-footer legal">
+        <p><a href="/en/privacy">PRIVACY POLICY</a></p>
+        <p>
+            ${page.customfooter.copyright} //TODO: tel + mail + adr
+        </p>
+    </div>
+
+</div>

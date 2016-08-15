@@ -1,0 +1,36 @@
+dashboard:
+  - name: dash1
+    label: Dash1
+    url: '#dash1'
+    image: ''
+    group: group1
+
+  - name: dash2
+    label: Dash2
+    url: '#dash2'
+    image: ''
+    group: group1
+
+  - name: dash3
+    label: Dash3
+    url: '#dash3'
+    image: ''
+    group: group2
+
+  - name: dash4
+    label: Dash4
+    url: '#dash4'
+    image: ''
+    group: group2
+
+  - name: dash5
+    label: Dash5
+    url: '#dash5'
+    image: ''
+    group: group3
+
+  - name: dash6
+    label: Dash6
+    url: '#dash6'
+    image: ''
+    group: group3

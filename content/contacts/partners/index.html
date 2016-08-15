@@ -1,0 +1,23 @@
+---
+layout: page
+title: "Партнеры"
+navigate: true
+---
+
+<section class="container container-partners">
+    <h1>Есть партнеры ? </h1>
+    <ul class="list-line list-line--four">
+        <% 10.times { %>
+            <li>
+                <img src="${r '/images/partners/partner-default.png'}" />
+                <div>
+                    <h3 class="header-s"> Partner ${it}</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet
+                    </p>
+                </div>
+            </li>
+        <% } %>
+    </ul>
+    
+</section>

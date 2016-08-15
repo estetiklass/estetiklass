@@ -1,0 +1,16 @@
+<%  def dashs = page.dashs?.groupBy { it.group } %>
+
+<nav class="top-footer">
+    <% dashs.each { group -> %>
+    <div>
+        <% group.value.each { dash -> %>
+
+            <a href="${dash.url}" class="decorator-footer">
+                <h3 class="header-l">${dash.label}</h3>
+                <img src="#" alt="${dash.label}" />
+            </a>
+
+        <% } %>
+    </div>
+    <% } %>
+</nav>
