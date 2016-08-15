@@ -1,0 +1,35 @@
+products:
+  - name: products
+    label: Продукты
+    order: 2
+    items:
+    - order: 1
+      name: neoline
+      label: NEOLINE
+      image: '/images/products/default.png'
+      url: '/products/line1/#neoline'
+    - order: 2
+      name: YVOIRE
+      label: YVOIRE
+      image: '/images/products/default.png'
+      url: '/products/line1/#YVOIRE'
+    - order: 3
+      name: COLLOST
+      label: COLLOST
+      image: '/images/products/default.png'
+      url: '/products/line1/#COLLOST'
+    - order: 4
+      name: Princess
+      label: Princess
+      image: '/images/products/default.png'
+      url: '/products/line1/#Princess'
+    - order: 5
+      name: PLEYANA
+      label: PLEYANA
+      image: '/images/products/default.png'
+      url: '/products/line1/#PLEYANA'
+    - order: 6
+      name: АТОверол
+      label: АТОверол
+      image: '/images/products/default.png'
+      url: '/products/line1/#АТОверол'

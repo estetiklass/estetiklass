@@ -1,0 +1,11 @@
+contacts:
+  logo: "/images/logo.png"
+
+  phones:
+      - number: "+7 (351) 248-10-01"
+      - number: "+7 (951) 440-86-42"
+      - number: "+7 (351) 282-86-42"
+
+  email: "esteticmed@mail.ru"
+
+  address: "Челябинск, ул. Гагарина, 38"
